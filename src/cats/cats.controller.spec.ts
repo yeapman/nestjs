@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CatsController } from './cats.controller';
+import {HtmlFileToPdfBufferController} from "./cats.controller";
 
 describe('CatsController', () => {
-  let controller: CatsController;
+  let controller: HtmlFileToPdfBufferController;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [CatsController],
+      controllers: [HtmlFileToPdfBufferController],
     }).compile();
 
-    controller = module.get<CatsController>(CatsController);
+    controller = module.get<HtmlFileToPdfBufferController>(HtmlFileToPdfBufferController);
   });
 
   it('should be defined', () => {

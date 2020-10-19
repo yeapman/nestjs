@@ -4,7 +4,7 @@ var mammoth = require("mammoth");
 var pdf = require('html-pdf');
 
 @Controller('cats')
-export class CatsController {
+export class HtmlFileToPdfBufferController {
   @Get()
   async getGenerateServiceDoc(
     @Res() res,
